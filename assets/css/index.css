@@ -5,6 +5,11 @@
           box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Made Tommy', sans-serif;
+  src: url("../fonts/font.otf");
+}
+
 body {
   background-color: #f0f0f0;
 }
