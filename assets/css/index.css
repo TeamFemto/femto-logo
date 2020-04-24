@@ -140,6 +140,7 @@ body .femto-app .femto-section .femto-container .femto-download .femto-link {
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 body .femto-app .femto-section .femto-container .femto-download .femto-link:hover {
