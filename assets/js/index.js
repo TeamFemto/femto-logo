@@ -15,3 +15,16 @@ FEMTO_INPUTS.forEach(input => {
     NAME.innerHTML = input.value
   })
 })
+
+/*////////////////////////////
+        HTML TO CANVAS
+////////////////////////////*/
+
+function download () {
+  html2canvas(GENERATOR).then(canvas => {
+    let link = document.createElement('a');
+    link.download = NAME.innerHTML + '.png';
+    link.href = canvas.toDataURL()
+    link.click()
+  })
+}
