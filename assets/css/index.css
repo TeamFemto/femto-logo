@@ -15,7 +15,19 @@ body .femto-app .femto-header {
   padding: 2rem 0;
 }
 
+@media (max-width: 768px) {
+  body .femto-app .femto-header {
+    padding: 2rem;
+  }
+}
+
 body .femto-app .femto-header .femto-container .femto-logo {
   display: block;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  body .femto-app .femto-header .femto-container .femto-logo {
+    width: 100%;
+  }
 }
