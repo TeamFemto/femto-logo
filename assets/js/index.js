@@ -4,7 +4,8 @@
 
 const FEMTO_INPUTS = document.querySelectorAll('.femto-input'),
       GENERATOR    = document.getElementsByClassName('femto-generator')[0],
-      NAME         = GENERATOR.getElementsByClassName('femto-name')[0]
+      NAME         = GENERATOR.getElementsByClassName('femto-name')[0],
+      DOWNLOAD     = document.getElementsByClassName('femto-link')[0]
 
 /*/////////////////////////////
         LOGO GENERATION
@@ -28,3 +29,11 @@ function download () {
     link.click()
   })
 }
+
+/*////////////////////////////
+           DOWNLOAD           
+////////////////////////////*/
+
+DOWNLOAD.addEventListener('click', () => {
+  download()
+})
