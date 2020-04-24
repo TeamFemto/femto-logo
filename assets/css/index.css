@@ -57,6 +57,7 @@ body .femto-app .femto-section .femto-container .femto-generator {
 }
 
 body .femto-app .femto-section .femto-container .femto-generator .femto-name {
+  font-family: 'Made Tommy', sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
