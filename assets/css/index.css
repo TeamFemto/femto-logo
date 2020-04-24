@@ -39,12 +39,56 @@ body .femto-app .femto-header .femto-container .femto-logo {
 
 body .femto-app .femto-section {
   display: block;
-  margin: 5rem auto 0;
+  margin: 3rem auto 0;
   width: 75%;
 }
 
 body .femto-app .femto-section .femto-container {
   position: relative;
+}
+
+body .femto-app .femto-section .femto-container .femto-form {
+  margin: 1.5rem 0;
+}
+
+body .femto-app .femto-section .femto-container .femto-form .femto-input {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-bottom: solid #aaaaaa 1px;
+  background-color: transparent;
+  outline: none;
+  font-family: sans-serif;
+  padding: 0.2rem 0.1rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+body .femto-app .femto-section .femto-container .femto-form .femto-input:focus {
+  border-bottom: solid #2d2d2d 1px;
+}
+
+body .femto-app .femto-section .femto-container .femto-form .femto-input:focus ~ .femto-placeholder {
+  top: -40px;
+  opacity: 1;
+}
+
+body .femto-app .femto-section .femto-container .femto-form .femto-placeholder {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  top: -18px;
+  left: -3rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+  font-family: sans-serif;
 }
 
 body .femto-app .femto-section .femto-container .femto-generator {
