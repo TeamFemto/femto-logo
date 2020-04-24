@@ -42,10 +42,22 @@ body .femto-app .femto-section .femto-container {
   position: relative;
 }
 
-body .femto-app .femto-section .femto-container .femto-canvas {
+body .femto-app .femto-section .femto-container .femto-generator {
   display: block;
   background-color: #2d2d2d;
   height: 512px;
   width: 512px;
   margin: 0 auto;
+  position: relative;
+}
+
+body .femto-app .femto-section .femto-container .femto-generator .femto-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6rem;
+  text-transform: uppercase;
 }
