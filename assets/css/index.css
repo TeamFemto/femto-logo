@@ -39,7 +39,7 @@ body .femto-app .femto-header .femto-container .femto-logo {
 
 body .femto-app .femto-section {
   display: block;
-  margin: 3rem auto 0;
+  margin: 2rem auto 0;
   width: 75%;
 }
 
@@ -48,7 +48,7 @@ body .femto-app .femto-section .femto-container {
 }
 
 body .femto-app .femto-section .femto-container .femto-form {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 }
 
 body .femto-app .femto-section .femto-container .femto-form .femto-input {
@@ -119,4 +119,30 @@ body .femto-app .femto-section .femto-container .femto-generator .femto-name {
   color: white;
   font-size: 6rem;
   text-transform: uppercase;
+}
+
+body .femto-app .femto-section .femto-container .femto-download {
+  margin: 0.75rem 0 0;
+  position: relative;
+}
+
+body .femto-app .femto-section .femto-container .femto-download .femto-link {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: sans-serif;
+  border: solid #2d2d2d 1px;
+  color: #2d2d2d;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+body .femto-app .femto-section .femto-container .femto-download .femto-link:hover {
+  background-color: #2d2d2d;
+  color: white;
 }
