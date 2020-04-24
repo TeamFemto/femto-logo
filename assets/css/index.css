@@ -39,7 +39,7 @@ body .femto-app .femto-header .femto-container .femto-logo {
 
 body .femto-app .femto-section {
   display: block;
-  margin: 2rem auto 0;
+  margin: 1.75rem auto 0;
   width: 75%;
 }
 
@@ -54,7 +54,7 @@ body .femto-app .femto-section .femto-container {
 }
 
 body .femto-app .femto-section .femto-container .femto-form {
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 }
 
 body .femto-app .femto-section .femto-container .femto-form .femto-input {
@@ -180,7 +180,7 @@ body .femto-app .femto-section .femto-container .femto-generator .femto-name {
 }
 
 body .femto-app .femto-section .femto-container .femto-download {
-  margin: 0.75rem 0 0;
+  margin: 0.9rem 0;
   position: relative;
 }
 
