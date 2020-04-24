@@ -65,6 +65,15 @@ body .femto-app .femto-section .femto-container .femto-form .femto-input {
   transition: all 0.3s ease;
 }
 
+body .femto-app .femto-section .femto-container .femto-form .femto-input:valid {
+  border-bottom: solid #2d2d2d 1px;
+}
+
+body .femto-app .femto-section .femto-container .femto-form .femto-input:valid ~ .femto-placeholder {
+  top: -40px;
+  opacity: 1;
+}
+
 body .femto-app .femto-section .femto-container .femto-form .femto-input:focus {
   border-bottom: solid #2d2d2d 1px;
 }
