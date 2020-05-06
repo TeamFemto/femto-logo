@@ -35,13 +35,7 @@ FEMTO_INPUTS.forEach(input => {
     })
   })
 })
-const TempImage = window.Image
 
-const Image = function() {
-  const img = new TempImage()
-  img.crossOrigin = 'anonymous'
-  return img
-}
 
 /*////////////////////////////
         HTML TO CANVAS
@@ -49,8 +43,7 @@ const Image = function() {
 
 function download () {
   html2canvas(GENERATOR, {
-    allowTaint: true,
-    foreignObjectRendering: true
+    allowTaint: true
 }).then(canvas => {
     let link = document.createElement('a');
     link.download = NAME.innerHTML + '.png';
