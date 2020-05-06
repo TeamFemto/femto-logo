@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @font-face {
@@ -18,6 +20,7 @@ body .femto-app .femto-header {
   position: relative;
   background-color: white;
   padding: 2rem 0;
+  border-bottom: solid #2d2d2d 6px;
 }
 
 @media (max-width: 768px) {
@@ -29,6 +32,7 @@ body .femto-app .femto-header {
 body .femto-app .femto-header .femto-container .femto-logo {
   display: block;
   margin: 0 auto;
+  width: 25%;
 }
 
 @media (max-width: 768px) {
@@ -65,7 +69,6 @@ body .femto-app .femto-section .femto-container .femto-form .femto-input {
   border-bottom: solid #aaaaaa 1px;
   background-color: transparent;
   outline: none;
-  font-family: sans-serif;
   padding: 0.2rem 0.1rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -101,8 +104,8 @@ body .femto-app .femto-section .femto-container .femto-form .femto-placeholder {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  top: -18px;
-  left: -3rem;
+  top: -20px;
+  left: -2.75rem;
   text-align: center;
   display: block;
   margin: 0 auto;
@@ -110,7 +113,6 @@ body .femto-app .femto-section .femto-container .femto-form .femto-placeholder {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   opacity: 0.5;
-  font-family: sans-serif;
 }
 
 @media (max-width: 470px) {
@@ -120,6 +122,7 @@ body .femto-app .femto-section .femto-container .femto-form .femto-placeholder {
 }
 
 body .femto-app .femto-section .femto-container .femto-generator {
+  pointer-events: none;
   display: block;
   background-color: #2d2d2d;
   height: 512px;
@@ -194,13 +197,13 @@ body .femto-app .femto-section .femto-container .femto-download .femto-link {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  font-family: sans-serif;
   border: solid #2d2d2d 1px;
   color: #2d2d2d;
   padding: 0.5rem 2rem;
   text-decoration: none;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  font-weight: 400;
   cursor: pointer;
 }
 
