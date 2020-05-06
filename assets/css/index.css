@@ -176,6 +176,8 @@ body .femto-app .femto-section .femto-container .femto-generator .femto-name .fe
 body .femto-app .femto-section .femto-container .femto-generator .femto-name .femto-letter img {
   width: 128px;
   vertical-align: middle;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 @media (max-width: 768px) {

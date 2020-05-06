@@ -28,6 +28,7 @@ FEMTO_INPUTS.forEach(input => {
         IMAGE.src = 'assets/img/femto.png'
         IMAGE.alt = ''
         IMAGE.crossOrigin = 'anonymous'
+        IMAGE.style.transform = 'scaleX(' + [1, -1][Math.floor(Math.random() * 2)] + ')'
         SPAN.appendChild(IMAGE)
         IMAGE.style.width = DF_IMAGE - (input.value.split('').length * 5) + 'px'
       } else {
