@@ -25,6 +25,7 @@ FEMTO_INPUTS.forEach(input => {
         const IMAGE = document.createElement('img')
         IMAGE.src = 'assets/img/femto.png'
         IMAGE.alt = ''
+        IMAGE.crossOrigin = 'anonymous'
         SPAN.appendChild(IMAGE)
         IMAGE.style.width = DF_IMAGE - (input.value.split('').length * 5) + 'px'
       } else {
@@ -34,18 +35,28 @@ FEMTO_INPUTS.forEach(input => {
     })
   })
 })
+const TempImage = window.Image
+
+const Image = function() {
+  const img = new TempImage()
+  img.crossOrigin = 'anonymous'
+  return img
+}
 
 /*////////////////////////////
         HTML TO CANVAS
 ////////////////////////////*/
 
 function download () {
-  html2canvas(GENERATOR).then(canvas => {
+  html2canvas(GENERATOR, {
+    allowTaint: true,
+    foreignObjectRendering: true
+}).then(canvas => {
     let link = document.createElement('a');
     link.download = NAME.innerHTML + '.png';
     link.href = canvas.toDataURL()
     link.click()
-  })
+  }, )
 }
 
 /*////////////////////////////
