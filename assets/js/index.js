@@ -7,7 +7,8 @@ const FEMTO_INPUTS = document.querySelectorAll('.femto-input'),
       NAME         = GENERATOR.getElementsByClassName('femto-name')[0],
       DOWNLOAD     = document.getElementsByClassName('femto-link')[0]
 let   DF_WEIGHT    = 6,
-      DF_IMAGE     = 128
+      DF_IMAGE     = 128,
+      LOGO_NAME    = ''
 
 /*/////////////////////////////
         LOGO GENERATION
@@ -15,6 +16,7 @@ let   DF_WEIGHT    = 6,
 
 FEMTO_INPUTS.forEach(input => {
   input.addEventListener('keyup', () => {
+    LOGO_NAME = input.value
     NAME.innerHTML = ''
     NAME.style.fontSize = DF_WEIGHT - (input.value.split('').length / 4) + 'rem'
     const LETTERS = input.value.split('')
@@ -46,10 +48,10 @@ function download () {
     allowTaint: true
 }).then(canvas => {
     let link = document.createElement('a');
-    link.download = NAME.innerHTML + '.png';
+    link.download = LOGO_NAME + '.png';
     link.href = canvas.toDataURL()
     link.click()
-  }, )
+  })
 }
 
 /*////////////////////////////
