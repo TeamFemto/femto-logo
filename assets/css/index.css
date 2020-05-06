@@ -153,7 +153,6 @@ body .femto-app .femto-section .femto-container .femto-generator {
 }
 
 body .femto-app .femto-section .femto-container .femto-generator .femto-name {
-  font-family: 'Made Tommy', sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -165,6 +164,18 @@ body .femto-app .femto-section .femto-container .femto-generator .femto-name {
   font-size: 6rem;
   text-transform: uppercase;
   word-break: break-all;
+}
+
+body .femto-app .femto-section .femto-container .femto-generator .femto-name .femto-letter {
+  font-family: 'Made Tommy', sans-serif;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+body .femto-app .femto-section .femto-container .femto-generator .femto-name .femto-letter img {
+  width: 128px;
+  vertical-align: middle;
 }
 
 @media (max-width: 768px) {
